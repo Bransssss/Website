@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <style>
+    /* Link styles */
+    .nav-link {
+      padding: 10px 20px;
+      font-size: 18px;
+      text-decoration: none;
+      color: #1ea0f7; /* Bright blue */
+      position: relative;
+      font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: 5px; /* Adjusted position, closer to the text */
+      left: 0;
+      background-color: #ffcc00; /* Yellow */
+      visibility: hidden;
+      transform: scaleX(0);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::after {
+      visibility: visible;
+      transform: scaleX(1);
+    }
+  </style>
+  <!-- Include Montserrat font from Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap">
+</head>
+
+<body text="#FFFFFF">
+  <table width="100%">
+    <th align="center"><a class="nav-link" href="Myself.html" target="down">About Me</a></th>
+    <th align="center"><a class="nav-link" href="Stories.html" target="down">Explore</a></th>
+    <th align="center"><a class="nav-link" href="Form.html" target="down">Sign In</a></th>
+    <th align="center"><a class="nav-link" href="Help.html" target="down">Help</a></th>
+  </table>
+</body>
+</html>
