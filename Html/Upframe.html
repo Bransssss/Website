@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>About Me</title>
   <style>
     /* Link styles */
     .nav-link {
@@ -16,10 +17,10 @@
     .nav-link::after {
       content: '';
       position: absolute;
-      width: 100%;
+      width: calc(100% - 10px); /* Adjusted for closer underline */
       height: 2px;
-      bottom: -5px; /* Adjust the value to position the underline */
-      left: 0;
+      bottom: -3px; /* Adjusted for closer underline */
+      left: 5px; /* Adjusted for closer underline */
       background-color: #ffcc00; /* Yellow */
       visibility: hidden;
       transform: scaleX(0);
@@ -36,7 +37,7 @@
     @media screen and (max-width: 600px) {
       /* Adjust the position of the underline */
       .nav-link::after {
-        bottom: -3px; /* Adjusted for mobile view */
+        bottom: -2px; /* Adjusted for mobile view */
       }
     }
   </style>
@@ -46,7 +47,7 @@
 
 <body text="#FFFFFF">
   <table width="100%">
-    <th align="center"><a class="nav-link" href="Myself.html" target="down">About</a></th>
+    <th align="center"><a class="nav-link" href="Myself.html" target="down">About Me</a></th>
     <th align="center"><a class="nav-link" href="Stories.html" target="down">Explore</a></th>
     <th align="center"><a class="nav-link" href="Form.html" target="down">Sign In</a></th>
     <th align="center"><a class="nav-link" href="Help.html" target="down">Help</a></th>
