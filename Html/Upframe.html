@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-
   <style>
     /* Link styles */
     .nav-link {
       padding: 10px 20px;
       font-size: 18px;
       text-decoration: none;
-      color: #1ea0f7; /* Bright blue */
+      color: #229ff3; /* Bright blue */
       position: relative;
       font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
     }
 
+    /* Styling for the underline */
     .nav-link::after {
       content: '';
       position: absolute;
       width: 100%;
       height: 2px;
-      bottom: 5px; /* Adjusted position, closer to the text */
+      bottom: -5px; /* Adjust the value to position the underline */
       left: 0;
       background-color: #ffcc00; /* Yellow */
       visibility: hidden;
@@ -26,9 +26,18 @@
       transition: all 0.3s ease-in-out;
     }
 
+    /* Styling for the underline on hover */
     .nav-link:hover::after {
       visibility: visible;
       transform: scaleX(1);
+    }
+
+    /* Media query for smaller screens */
+    @media screen and (max-width: 600px) {
+      /* Adjust the position of the underline */
+      .nav-link::after {
+        bottom: -3px; /* Adjusted for mobile view */
+      }
     }
   </style>
   <!-- Include Montserrat font from Google Fonts -->
@@ -37,7 +46,7 @@
 
 <body text="#FFFFFF">
   <table width="100%">
-    <th align="center"><a class="nav-link" href="Myself.html" target="down">About Me</a></th>
+    <th align="center"><a class="nav-link" href="Myself.html" target="down">About</a></th>
     <th align="center"><a class="nav-link" href="Stories.html" target="down">Explore</a></th>
     <th align="center"><a class="nav-link" href="Form.html" target="down">Sign In</a></th>
     <th align="center"><a class="nav-link" href="Help.html" target="down">Help</a></th>
